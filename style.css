@@ -292,6 +292,8 @@ main .search .filters .filter span {
 .hostingside .articleside {
   display: flex;
   flex-direction: row;
+  width: 390px;
+  flex-wrap: nowrap;
   justify-content: space-between;
   padding: 5px;
   background-color: #fff;

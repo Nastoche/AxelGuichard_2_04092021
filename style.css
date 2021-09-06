@@ -407,56 +407,6 @@ footer {
   transition-duration: 0.2s;
   color: #0065fc;
 }
-@media screen and (min-width: 1000px) {
-  .activity {
-    margin: 4rem 0;
-    display: grid;
-    column-gap: 2rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 60px 14rem 2rem 2rem 2rem 14rem;
-  }
-
-  .activitycard1 {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-row-end: 7;
-    display: flex;
-  }
-
-  .activitycard2 {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    display: flex;
-  }
-
-  .activitycard3 {
-    grid-column-start: 3;
-    grid-row-start: 2;
-    grid-row-end: 7;
-    display: flex;
-  }
-
-  .activitycard4 {
-    grid-column-start: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: flex;
-  }
-
-  .activitycard5 {
-    grid-column-start: 2;
-    grid-row-start: 6;
-    display: flex;
-  }
-
-  .activitycard6 {
-    grid-column-start: 4;
-    grid-row-start: 4;
-    grid-row-end: 7;
-    display: flex;
-  }
-}
 
 @media screen and (max-width: 1440px) {
   .hosting {
@@ -687,6 +637,57 @@ footer {
   .activity h1 {
     grid-row: 1;
     grid-column: 1;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .activity {
+    margin: 4rem 0;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60px 14rem 2rem 2rem 2rem 14rem;
+  }
+
+  .activitycard1 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    display: flex;
+  }
+
+  .activitycard2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: flex;
+  }
+
+  .activitycard3 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    display: flex;
+  }
+
+  .activitycard4 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+  }
+
+  .activitycard5 {
+    grid-column-start: 2;
+    grid-row-start: 6;
+    display: flex;
+  }
+
+  .activitycard6 {
+    grid-column-start: 4;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    display: flex;
   }
 }
 

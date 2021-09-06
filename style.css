@@ -176,10 +176,6 @@ main .search .filters .filter .icon {
   color: #005de7;
 }
 
-.icon i {
-  font-size: 24px;
-}
-
 main .search .filters .filter span {
   margin: 0 1rem;
   font-weight: bold;
@@ -202,6 +198,10 @@ main .search .filters .filter span {
   font-size: 14px;
 }
 
+.filters .fas {
+  font-size: 24px;
+}
+
 /* Début de la section hosting */
 
 .hosting {
@@ -221,8 +221,15 @@ main .search .filters .filter span {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20px 1fr 1fr auto;
   grid-gap: 2rem;
   padding: 20px 15px 15px 15px;
+}
+
+.cards h2 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  position: absolute;
 }
 
 .article {
@@ -232,6 +239,41 @@ main .search .filters .filter span {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   transition-duration: 0.2s;
+}
+
+.article1 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.article2 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.article3 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.article4 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.article5 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+.article6 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.showmore {
+  grid-column-start: 1;
+  grid-row-start: 4;
 }
 
 .article:hover,
@@ -271,13 +313,20 @@ main .search .filters .filter span {
   color: #d9d9d9;
 }
 
+.showmore {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition-duration: 0.2s;
+}
+
 /* Début hostingside */
 
 .hostingside {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 60px 0.2fr 0.2fr 0.2fr;
   grid-gap: 1rem;
-  width: 110%;
 }
 
 .hostingside .hostingsidehead {
@@ -291,8 +340,8 @@ main .search .filters .filter span {
 }
 
 .hostingside .articleside {
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: auto auto;
   padding: 5px;
   background-color: #fff;
   border-radius: 20px;
@@ -304,8 +353,19 @@ main .search .filters .filter span {
 .hostingside img {
   border-radius: 16px 0px 0 16px;
   height: 130px;
-  width: 130px;
+  width: 113px;
   object-fit: cover;
+}
+
+.articleside1 {
+  grid-row-start: 2;
+}
+.articleside2 {
+  grid-row-start: 3;
+}
+
+.articleside3 {
+  grid-row-start: 4;
 }
 
 .articlesideinfo {
@@ -427,7 +487,8 @@ footer {
   transition-duration: 0.2s;
 }
 
-.footerlink a:hover {
+.footerlink a:hover,
+.showmore:hover {
   transition-duration: 0.2s;
   color: #0065fc;
 }

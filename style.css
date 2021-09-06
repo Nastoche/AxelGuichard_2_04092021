@@ -86,7 +86,7 @@ main h1 {
   width: 240px;
 }
 
-.location form input:focus::-webkit-input-placeholder {
+.location form input:focus {
   opacity: 0.2;
   transition: 0.2s all;
 }
@@ -277,6 +277,7 @@ main .search .filters .filter span {
   display: grid;
   grid-template-rows: 1fr;
   grid-gap: 1rem;
+  width: 110%;
 }
 
 .hostingside .hostingsidehead {
@@ -291,9 +292,7 @@ main .search .filters .filter span {
 
 .hostingside .articleside {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
   padding: 5px;
   background-color: #fff;
   border-radius: 20px;

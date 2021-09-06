@@ -70,7 +70,7 @@ main {
 }
 
 main h1 {
-  font-size: 25px;
+  font-size: 2em;
   line-height: 2em;
 }
 
@@ -81,7 +81,7 @@ main h1 {
   border-right: none;
   border-bottom: #f2f2f2 1px solid;
   border-left: none;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   width: 240px;
 }
@@ -124,7 +124,7 @@ main h1 {
   width: 150px;
   border-radius: 0 16px 16px 0;
   border: none;
-  font-size: 20px;
+  font-size: 16px;
   transition: 0.4s all ease;
 }
 
@@ -349,6 +349,14 @@ main .search .filters .filter span {
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   transition-duration: 0.2s;
 }
+.hostingside h2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hostingside h2 .fas {
+  font-size: 24px;
+}
 
 .hostingside img {
   border-radius: 16px 0px 0 16px;
@@ -384,12 +392,13 @@ main .search .filters .filter span {
   display: grid;
   column-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+  grid-template-rows: 60px 14rem 2rem 2rem 2rem 14rem;
   margin: 40px 0;
 }
 
 .activity h1 {
   padding-bottom: 20px;
+  position: absolute;
 }
 
 .activitycard img {
@@ -491,4 +500,40 @@ footer {
 .showmore:hover {
   transition-duration: 0.2s;
   color: #0065fc;
+}
+
+@media screen and (max-width: 1440px) {
+  .hosting {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+  }
+  .hostingmain img {
+    width: 100%;
+  }
+  .hostingside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 1fr;
+  }
+
+  .hostingside .populartitle {
+    grid-column: 1/4;
+  }
+
+  .articleside1 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .articleside2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .articleside3 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
 }

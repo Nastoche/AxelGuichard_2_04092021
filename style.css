@@ -828,6 +828,14 @@ footer {
     display: none;
   }
 
+  .filters {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .filter {
+    width: 80%;
+  }
+
   .hostingmain {
     background-color: #fff;
   }

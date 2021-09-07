@@ -39,12 +39,6 @@ header .navlink {
   border-top: 3px transparent solid;
 }
 
-header .navlink:hover {
-  color: #0065fc;
-  border-top: #0065fc 3px solid;
-  transition-duration: 0.2s;
-}
-
 .navlink[data-active="true"] {
   color: #0065fc;
   border-top: 3px solid #0065fc;
@@ -770,6 +764,12 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+  header .navlink:hover {
+    color: #0065fc;
+    border-top: #0065fc 3px solid;
+    transition-duration: 0.2s;
+  }
+
   .location .searchbtn {
     background-color: #0065fc;
     color: white;
@@ -801,6 +801,13 @@ footer {
     border-bottom-color: #0065fc;
     border-top: none;
   }
+
+  .navlink:hover {
+    color: #0065fc;
+    border-bottom: #0065fc 3px solid;
+    transition-duration: 0.2s;
+  }
+
   .search {
     padding: 20px;
   }

@@ -124,6 +124,10 @@ main h1 {
   transition: 0.2s all ease;
 }
 
+.searchicon {
+  display: none;
+}
+
 main .search .filters {
   margin-top: 3rem;
   display: flex;
@@ -403,6 +407,7 @@ footer {
   transition-duration: 0.2s;
   color: #0065fc;
 }
+
 @media screen and (min-width: 1140px) {
   .activity {
     margin: 4rem 0;
@@ -763,10 +768,6 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-  .searchicon {
-    display: none;
-  }
-
   .location .searchbtn {
     background-color: #0065fc;
     color: white;

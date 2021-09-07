@@ -835,6 +835,9 @@ footer {
   .filter {
     width: 80%;
   }
+  .hosting {
+    margin-top: 0;
+  }
 
   .hostingmain {
     background-color: #fff;

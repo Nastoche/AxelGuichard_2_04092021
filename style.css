@@ -53,6 +53,9 @@ header .signup {
   color: #0065fc;
   font-weight: 600;
 }
+header .signup:hover {
+  text-decoration: underline;
+}
 
 /* Début du main */
 

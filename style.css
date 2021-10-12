@@ -128,20 +128,23 @@ main h1 {
 
 main .search .filters {
   margin-top: 3rem;
+}
+
+main .search .filters .container {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  margin: auto -0.6rem;
 }
 
 main .search .filters h2 {
   margin: 0 2rem 1rem 0;
 }
 
-main .search .filters .filter {
+main .search .filters .container .filter {
   display: flex;
   align-items: center;
   border-radius: 2rem;
-  margin: 0 2rem 1rem 0;
+  margin: 0 0.4rem 1rem 0;
   border: 2px solid #d9d9d9;
   transition-duration: 0.2s;
   text-decoration: none;
